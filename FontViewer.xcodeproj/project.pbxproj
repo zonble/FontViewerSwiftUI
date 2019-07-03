@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4161A5622CC9DA6009A353A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4161A5522CC9DA6009A353A /* ContentView.swift */; };
 		D441D20122CBCCE5003231DD /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D441D20022CBCCE5003231DD /* Setting.swift */; };
 		D454A1C322CBA0990056B751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454A1C222CBA0990056B751 /* AppDelegate.swift */; };
 		D454A1C522CBA0990056B751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454A1C422CBA0990056B751 /* SceneDelegate.swift */; };
-		D454A1C722CBA0990056B751 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454A1C622CBA0990056B751 /* ContentView.swift */; };
 		D454A1C922CBA09D0056B751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D454A1C822CBA09D0056B751 /* Assets.xcassets */; };
 		D454A1CC22CBA09D0056B751 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D454A1CB22CBA09D0056B751 /* Preview Assets.xcassets */; };
 		D454A1CF22CBA09D0056B751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D454A1CD22CBA09D0056B751 /* LaunchScreen.storyboard */; };
@@ -19,12 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4161A5522CC9DA6009A353A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D441D20022CBCCE5003231DD /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		D441D20222CBD002003231DD /* AllFonts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllFonts.entitlements; sourceTree = "<group>"; };
 		D454A1BF22CBA0990056B751 /* FontViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D454A1C222CBA0990056B751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D454A1C422CBA0990056B751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D454A1C622CBA0990056B751 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D454A1C822CBA09D0056B751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D454A1CB22CBA09D0056B751 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D454A1CE22CBA09D0056B751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,9 +66,9 @@
 				D441D20222CBD002003231DD /* AllFonts.entitlements */,
 				D454A1C222CBA0990056B751 /* AppDelegate.swift */,
 				D454A1C422CBA0990056B751 /* SceneDelegate.swift */,
-				D454A1C622CBA0990056B751 /* ContentView.swift */,
-				D441D20022CBCCE5003231DD /* Setting.swift */,
+				D4161A5522CC9DA6009A353A /* ContentView.swift */,
 				D47B184822CBBEA300378DDE /* LoremIpsumView.swift */,
+				D441D20022CBCCE5003231DD /* Setting.swift */,
 				D47B184A22CBBF4F00378DDE /* SettingsView.swift */,
 				D454A1C822CBA09D0056B751 /* Assets.xcassets */,
 				D454A1CD22CBA09D0056B751 /* LaunchScreen.storyboard */,
@@ -159,9 +159,9 @@
 			files = (
 				D47B184B22CBBF4F00378DDE /* SettingsView.swift in Sources */,
 				D454A1C322CBA0990056B751 /* AppDelegate.swift in Sources */,
+				D4161A5622CC9DA6009A353A /* ContentView.swift in Sources */,
 				D441D20122CBCCE5003231DD /* Setting.swift in Sources */,
 				D454A1C522CBA0990056B751 /* SceneDelegate.swift in Sources */,
-				D454A1C722CBA0990056B751 /* ContentView.swift in Sources */,
 				D47B184922CBBEA300378DDE /* LoremIpsumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,29 +3,27 @@ import SwiftUI
 struct SettingsView : View {
 	@EnvironmentObject var settings: Settings
 	var body: some View {
-		List {
-			Section(header: Text("Preview Settings")) {
-				HStack {
-					Text("Font Size:")
-					Spacer()
+		NavigationView {
+			List {
+				Section {
+					Text("Font Size: \(Int(settings.fontSize)) pt")
 					HStack {
-						Text("12")
+						Text("12 pt")
 						Slider(value: $settings.fontSize, from: 12, through: 30, by: 1)
-						Text("24")
-					}.frame(width: 200)
+						Text("24 pt")
+					}
 				}
-				HStack {
-					Text("Line Spacing:")
-					Spacer()
+				Section {
+					Text("Line Spacing: \(Int(settings.lineSpacing)) pt")
 					HStack {
-						Text("0")
+						Text("0 pt")
 						Slider(value: $settings.lineSpacing, from: 0.0, through: 10.0, by: 1.0)
-						Text("10")
-					}.frame(width: 200)
+						Text("10 pt")
+					}
 				}
-			}
 			}.listStyle(.grouped)
-			.navigationBarTitle(Text("Settings"), displayMode:.inline)
+			.navigationBarTitle("Preview Settings", displayMode: .inline)
+		}
 	}
 }
 

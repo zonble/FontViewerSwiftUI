@@ -19,6 +19,8 @@ struct MultilineText: View {
 }
 
 struct LoremIpsumView: View {
+	@EnvironmentObject var settings: Settings
+	@State var presenting: Bool = false
 	var name: String
 	init(name: String) {
 		self.name = name
@@ -34,12 +36,6 @@ struct LoremIpsumView: View {
 
 	var body: some View {
 		VStack {
-			NavigationButton(destination: SettingsView(), isDetail: true) {
-				HStack {
-					Image.init(systemName: "ellipsis.circle")
-					Text("Change Settings")
-				}
-			}.padding(10)
 			List {
 				MultilineText(latin, name)
 				MultilineText(chinese, name)
@@ -47,8 +43,11 @@ struct LoremIpsumView: View {
 				MultilineText(korean, name)
 			}
 		}
+		.presentation(presenting ? Modal(SettingsView().environmentObject(settings), onDismiss:{self.presenting.toggle()}) : nil)
 		.navigationBarTitle(Text(name), displayMode:.inline)
+		.navigationBarItems(trailing: Button(action: { self.presenting.toggle() }) { Text("Settings") })
 	}
 }
+
 
 
