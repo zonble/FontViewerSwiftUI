@@ -43,7 +43,9 @@ struct LoremIpsumView: View {
 				MultilineText(korean, name)
 			}
 		}
-		.presentation(presenting ? Modal(SettingsView().environmentObject(settings), onDismiss:{self.presenting.toggle()}) : nil)
+		.sheet(isPresented: $presenting) {
+			SettingsView().environmentObject(self.settings)
+		}
 		.navigationBarTitle(Text(name), displayMode:.inline)
 		.navigationBarItems(trailing: Button(action: { self.presenting.toggle() }) { Text("Settings") })
 	}

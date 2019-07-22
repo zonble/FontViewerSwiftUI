@@ -25,15 +25,15 @@ class Settings : BindableObject {
 	@UserDefault("lineSpacing", defaultValue: 2.0)
 	var lineSpacing: Float {
 		didSet {
-			self.didChange.send(self)
+			self.willChange.send(self)
 		}
 	}
 
 	@UserDefault("fontSize", defaultValue: 17)
 	var fontSize: Float {
 		didSet {
-			self.didChange.send(self)
+			self.willChange.send(self)
 		}
 	}
-	var didChange = PassthroughSubject<Settings, Never>()
+	var willChange = PassthroughSubject<Settings, Never>()
 }
