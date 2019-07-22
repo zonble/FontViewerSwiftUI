@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// The setting view.
 struct SettingsView : View {
 	@EnvironmentObject var settings: Settings
 	var body: some View {
@@ -22,7 +23,7 @@ struct SettingsView : View {
 					}
 				}
 			}.listStyle(.grouped)
-			.navigationBarTitle("Preview Settings", displayMode: .inline)
+				.navigationBarTitle("Preview Settings", displayMode: .inline)
 		}
 	}
 }

@@ -3,7 +3,7 @@ import SwiftUI
 struct RootView : View {
 	var settings = Settings()
 
-    var body: some View {
+	var body: some View {
 		NavigationView {
 			List(UIFont.familyNames.sorted(), id:\.self) { name in
 				NavigationLink(destination: LoremIpsumView(name: name).environmentObject(self.settings)) {
@@ -18,14 +18,14 @@ struct RootView : View {
 				}
 			}.navigationBarTitle(Text("Font Viewer"))
 		}
-    }
+	}
 }
 
 #if DEBUG
 struct RootView_Previews : PreviewProvider {
-    static var previews: some View {
-        RootView()
-    }
+	static var previews: some View {
+		RootView()
+	}
 }
 #endif
 

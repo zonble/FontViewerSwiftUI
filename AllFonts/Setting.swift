@@ -5,12 +5,12 @@ import Combine
 struct UserDefault<T> {
 	let key: String
 	let defaultValue: T
-
+	
 	init(_ key: String, defaultValue: T) {
 		self.key = key
 		self.defaultValue = defaultValue
 	}
-
+	
 	var wrappedValue: T {
 		get {
 			return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
@@ -28,7 +28,7 @@ class Settings : BindableObject {
 			self.willChange.send(self)
 		}
 	}
-
+	
 	@UserDefault("fontSize", defaultValue: 17)
 	var fontSize: Float {
 		didSet {
